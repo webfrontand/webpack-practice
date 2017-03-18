@@ -63,24 +63,48 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-module.exports = "hello world"
-
+"use strict";
+/* harmony default export */ exports["a"] = "hello";
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+const image = document.createElement('img');
+
+image.src = 'http://lorempixel.com/400/400';
+
+document.body.appendChild(image);
+
+/***/ },
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
-const text = __webpack_require__(0);
+"use strict";
+/* harmony default export */ exports["a"] = "world";
 
-document.write(text);
+/***/ },
+/* 3 */
+/***/ function(module, exports, __webpack_require__) {
 
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__hello__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__world__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__image_viewer__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__image_viewer___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__image_viewer__);
+
+
+
+
+document.write(`${__WEBPACK_IMPORTED_MODULE_0__hello__["a" /* default */]} ${__WEBPACK_IMPORTED_MODULE_1__world__["a" /* default */]} !!`);
 
 /***/ }
 /******/ ]);
